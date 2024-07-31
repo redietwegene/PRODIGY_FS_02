@@ -27,7 +27,7 @@ function Login() {
         setAuth({ username, role: user.roles,accessToken });
         setUsername('');
         setPassword('');
-        console.log(accessToken);
+      
         navigate(user.roles === 'admin' ? '/admin' : '/user');
       } else {
         // Handle non-200 responses if needed
@@ -76,7 +76,7 @@ function Login() {
               />
               <button
                 type="button"
-                className="absolute top-1/2 transform -translate-y-1/2 right-3 text-gray-500"
+                className="absolute top-1/2 transform -translate-y-3/4 right-3 text-gray-500"
                 onClick={togglePasswordVisibility}
               >
                 {showPassword ? <MdVisibility /> : <MdVisibilityOff />}

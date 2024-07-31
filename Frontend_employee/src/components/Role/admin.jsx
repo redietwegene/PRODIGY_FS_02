@@ -1,19 +1,35 @@
+import React, { useState } from "react";
+import AddEmploye from "../Employe/addEmploye";
 import { Link } from "react-router-dom";
 
+const Admin = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
-const Admin =()=>{
-
-    return(
+  return (
+    <div className=" flex justify-center "   >
+      <div >
+        <h1 className="text-2xl font-bold mb-6 ">Admin's Page</h1>
+        <button
+          onClick={openModal}
+          className="bg-green-600 text-white p-2 rounded-md hover:bg-green-700"
+        >
+          ADD NEW EMPLOYE
+        </button>
         <div>
-            <h1>Admin</h1>
-            <Link to="/addEmploye"> ADD EMPLOYE</Link>
-
+          <AddEmploye isOpen={isModalOpen} onClose={closeModal} />
+        </div >
+        <div className="bg-green-600 text-white m-4 p-2 rounded-md hover:bg-green-700"> 
+              
+            <Link to={'/getEmployee'}>Employee list  </Link>
         </div>
-
-
-    )
-}
-
+    
+      </div>
+     
+    </div>
+  );
+};
 
 export default Admin;
