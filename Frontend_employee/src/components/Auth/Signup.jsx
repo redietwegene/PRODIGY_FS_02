@@ -42,7 +42,7 @@ const Signup = () => {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-100">
+        <div className="flex items-center justify-center min-h-screen  bg-sky-500">
             <div className="w-full max-w-sm p-8 bg-white rounded shadow-lg">
                 <h2 className="mb-6 text-2xl font-semibold text-center text-gray-700">SignUp</h2>
                 <form onSubmit={handleSubmit}>
@@ -98,12 +98,12 @@ const Signup = () => {
                         </div>
                     </div>
                     <div className='flex justify-center'>
-                        <button type="submit" className="flex justify-center w-64 py-2 mb-3 text-white bg-green-800 rounded-lg hover:bg-green-700">Sign up</button>
+                        <button type="submit" className="flex justify-center w-64 py-2 mb-3 text-white bg-blue-800 rounded-lg hover:bg-blue-700">Sign up</button>
                     </div>
                 </form>
                 <div className="flex justify-center">
                     <p>Already have an account?</p>
-                    <h5 className="text-green-800 font-medium">
+                    <h5 className="text-blue-800 font-medium">
                         <Link to="/">Login</Link>
                     </h5>
                 </div>

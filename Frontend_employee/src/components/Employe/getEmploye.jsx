@@ -21,8 +21,8 @@ const GetEmployee =()=>{
 
     return(
         <div>
-          <div>
-          <table>
+          <div >
+          <table className="mb-40">
             <thead>
                 <tr>
                    <th className="py-2 px-4 bg-gray-200 font-semibold text-gray-600">Full Name</th>
@@ -50,8 +50,10 @@ const GetEmployee =()=>{
 
 
                 </tbody>
-            </table>
-          </div>
+          </table>
+                  <Link className="bg-sky-400 p-2 rounded-md " to="/admin">Back to Home</Link>
+        </div>
+
         </div>
     )
 }

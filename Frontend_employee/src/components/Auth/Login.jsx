@@ -47,7 +47,7 @@ function Login() {
   
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-sky-500">
       <div className="w-full max-w-sm p-8 bg-white rounded shadow-lg">
         <h2 className="mb-6 text-2xl font-semibold text-center text-gray-700">Login</h2>
         <form onSubmit={handleSubmit}>
@@ -81,7 +81,7 @@ function Login() {
               >
                 {showPassword ? <MdVisibility /> : <MdVisibilityOff />}
               </button>
-              <div className='flex justify-end text-green-800 font-medium'>
+              <div className='flex justify-end text-blue-800 font-medium'>
                 <h5 className='underline'>
                   <Link to="/forgetpassword">Forget password?</Link>
                 </h5>
@@ -92,7 +92,7 @@ function Login() {
           <div className='flex justify-center'>
             <button
               type="submit"
-              className="flex justify-center w-64 py-2 text-white bg-green-800 rounded-lg hover:bg-green-700"
+              className="flex justify-center w-64 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-700"
               disabled={loading}
             >
               {loading ? 'Logging in...' : 'Login'}

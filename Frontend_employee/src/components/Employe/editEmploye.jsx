@@ -104,13 +104,13 @@ const EditEmployee = () => {
                         <button
                             type="button"
                             onClick={() => navigate("/getEmployee")}
-                            className="bg-red-900 text-white p-2 rounded-md mr-2 hover:bg-red-800"
+                            className="bg-red-500 text-white p-2 rounded-md mr-2 hover:bg-red-600"
                         >
                             Cancel
                         </button>
                         <button
                             type="submit"
-                            className="bg-green-900 text-white p-2 rounded-md hover:bg-green-800"
+                            className="bg-blue-900 text-white p-2 rounded-md hover:bg-blue-800"
                         >
                             Save Changes
                         </button>
